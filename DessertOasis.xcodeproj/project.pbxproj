@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD220D322C62CF6000693876 /* DessertOasisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D312C62CF6000693876 /* DessertOasisApp.swift */; };
+		DD220D342C62CF6000693876 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D332C62CF6000693876 /* ContentView.swift */; };
+		DD220D362C62CF6000693876 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D352C62CF6000693876 /* Item.swift */; };
+		DD220D382C62CF6200693876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD220D372C62CF6200693876 /* Assets.xcassets */; };
+		DD220D3C2C62CF6200693876 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD220D3B2C62CF6200693876 /* Preview Assets.xcassets */; };
+		DD220D462C62CF6200693876 /* DessertOasisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D452C62CF6200693876 /* DessertOasisTests.swift */; };
+		DD220D502C62CF6200693876 /* DessertOasisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D4F2C62CF6200693876 /* DessertOasisUITests.swift */; };
+		DD220D522C62CF6200693876 /* DessertOasisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D512C62CF6200693876 /* DessertOasisUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD220D422C62CF6200693876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD220D262C62CF6000693876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD220D2D2C62CF6000693876;
+			remoteInfo = DessertOasis;
+		};
+		DD220D4C2C62CF6200693876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD220D262C62CF6000693876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD220D2D2C62CF6000693876;
+			remoteInfo = DessertOasis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD220D2E2C62CF6000693876 /* DessertOasis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DessertOasis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD220D312C62CF6000693876 /* DessertOasisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertOasisApp.swift; sourceTree = "<group>"; };
+		DD220D332C62CF6000693876 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DD220D352C62CF6000693876 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		DD220D372C62CF6200693876 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD220D392C62CF6200693876 /* DessertOasis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DessertOasis.entitlements; sourceTree = "<group>"; };
+		DD220D3B2C62CF6200693876 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD220D412C62CF6200693876 /* DessertOasisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DessertOasisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD220D452C62CF6200693876 /* DessertOasisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertOasisTests.swift; sourceTree = "<group>"; };
+		DD220D4B2C62CF6200693876 /* DessertOasisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DessertOasisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD220D4F2C62CF6200693876 /* DessertOasisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertOasisUITests.swift; sourceTree = "<group>"; };
+		DD220D512C62CF6200693876 /* DessertOasisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertOasisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD220D2B2C62CF6000693876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD220D3E2C62CF6200693876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD220D482C62CF6200693876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD220D252C62CF6000693876 = {
+			isa = PBXGroup;
+			children = (
+				DD220D302C62CF6000693876 /* DessertOasis */,
+				DD220D442C62CF6200693876 /* DessertOasisTests */,
+				DD220D4E2C62CF6200693876 /* DessertOasisUITests */,
+				DD220D2F2C62CF6000693876 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD220D2F2C62CF6000693876 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD220D2E2C62CF6000693876 /* DessertOasis.app */,
+				DD220D412C62CF6200693876 /* DessertOasisTests.xctest */,
+				DD220D4B2C62CF6200693876 /* DessertOasisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD220D302C62CF6000693876 /* DessertOasis */ = {
+			isa = PBXGroup;
+			children = (
+				DD220D312C62CF6000693876 /* DessertOasisApp.swift */,
+				DD220D332C62CF6000693876 /* ContentView.swift */,
+				DD220D352C62CF6000693876 /* Item.swift */,
+				DD220D372C62CF6200693876 /* Assets.xcassets */,
+				DD220D392C62CF6200693876 /* DessertOasis.entitlements */,
+				DD220D3A2C62CF6200693876 /* Preview Content */,
+			);
+			path = DessertOasis;
+			sourceTree = "<group>";
+		};
+		DD220D3A2C62CF6200693876 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DD220D3B2C62CF6200693876 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DD220D442C62CF6200693876 /* DessertOasisTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD220D452C62CF6200693876 /* DessertOasisTests.swift */,
+			);
+			path = DessertOasisTests;
+			sourceTree = "<group>";
+		};
+		DD220D4E2C62CF6200693876 /* DessertOasisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD220D4F2C62CF6200693876 /* DessertOasisUITests.swift */,
+				DD220D512C62CF6200693876 /* DessertOasisUITestsLaunchTests.swift */,
+			);
+			path = DessertOasisUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD220D2D2C62CF6000693876 /* DessertOasis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD220D552C62CF6200693876 /* Build configuration list for PBXNativeTarget "DessertOasis" */;
+			buildPhases = (
+				DD220D2A2C62CF6000693876 /* Sources */,
+				DD220D2B2C62CF6000693876 /* Frameworks */,
+				DD220D2C2C62CF6000693876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DessertOasis;
+			productName = DessertOasis;
+			productReference = DD220D2E2C62CF6000693876 /* DessertOasis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD220D402C62CF6200693876 /* DessertOasisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD220D582C62CF6200693876 /* Build configuration list for PBXNativeTarget "DessertOasisTests" */;
+			buildPhases = (
+				DD220D3D2C62CF6200693876 /* Sources */,
+				DD220D3E2C62CF6200693876 /* Frameworks */,
+				DD220D3F2C62CF6200693876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD220D432C62CF6200693876 /* PBXTargetDependency */,
+			);
+			name = DessertOasisTests;
+			productName = DessertOasisTests;
+			productReference = DD220D412C62CF6200693876 /* DessertOasisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD220D4A2C62CF6200693876 /* DessertOasisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD220D5B2C62CF6200693876 /* Build configuration list for PBXNativeTarget "DessertOasisUITests" */;
+			buildPhases = (
+				DD220D472C62CF6200693876 /* Sources */,
+				DD220D482C62CF6200693876 /* Frameworks */,
+				DD220D492C62CF6200693876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD220D4D2C62CF6200693876 /* PBXTargetDependency */,
+			);
+			name = DessertOasisUITests;
+			productName = DessertOasisUITests;
+			productReference = DD220D4B2C62CF6200693876 /* DessertOasisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD220D262C62CF6000693876 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					DD220D2D2C62CF6000693876 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					DD220D402C62CF6200693876 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = DD220D2D2C62CF6000693876;
+					};
+					DD220D4A2C62CF6200693876 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = DD220D2D2C62CF6000693876;
+					};
+				};
+			};
+			buildConfigurationList = DD220D292C62CF6000693876 /* Build configuration list for PBXProject "DessertOasis" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD220D252C62CF6000693876;
+			productRefGroup = DD220D2F2C62CF6000693876 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD220D2D2C62CF6000693876 /* DessertOasis */,
+				DD220D402C62CF6200693876 /* DessertOasisTests */,
+				DD220D4A2C62CF6200693876 /* DessertOasisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD220D2C2C62CF6000693876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD220D3C2C62CF6200693876 /* Preview Assets.xcassets in Resources */,
+				DD220D382C62CF6200693876 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD220D3F2C62CF6200693876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD220D492C62CF6200693876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD220D2A2C62CF6000693876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD220D342C62CF6000693876 /* ContentView.swift in Sources */,
+				DD220D362C62CF6000693876 /* Item.swift in Sources */,
+				DD220D322C62CF6000693876 /* DessertOasisApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD220D3D2C62CF6200693876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD220D462C62CF6200693876 /* DessertOasisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD220D472C62CF6200693876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD220D502C62CF6200693876 /* DessertOasisUITests.swift in Sources */,
+				DD220D522C62CF6200693876 /* DessertOasisUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD220D432C62CF6200693876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD220D2D2C62CF6000693876 /* DessertOasis */;
+			targetProxy = DD220D422C62CF6200693876 /* PBXContainerItemProxy */;
+		};
+		DD220D4D2C62CF6200693876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD220D2D2C62CF6000693876 /* DessertOasis */;
+			targetProxy = DD220D4C2C62CF6200693876 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DD220D532C62CF6200693876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD220D542C62CF6200693876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		DD220D562C62CF6200693876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DessertOasis/DessertOasis.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DessertOasis/Preview Content\"";
+				DEVELOPMENT_TEAM = ND29VRWA3P;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colewhaley.DessertOasis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD220D572C62CF6200693876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DessertOasis/DessertOasis.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DessertOasis/Preview Content\"";
+				DEVELOPMENT_TEAM = ND29VRWA3P;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colewhaley.DessertOasis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD220D592C62CF6200693876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ND29VRWA3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colewhaley.DessertOasisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DessertOasis.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DessertOasis";
+			};
+			name = Debug;
+		};
+		DD220D5A2C62CF6200693876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ND29VRWA3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colewhaley.DessertOasisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DessertOasis.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DessertOasis";
+			};
+			name = Release;
+		};
+		DD220D5C2C62CF6200693876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ND29VRWA3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colewhaley.DessertOasisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DessertOasis;
+			};
+			name = Debug;
+		};
+		DD220D5D2C62CF6200693876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ND29VRWA3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colewhaley.DessertOasisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DessertOasis;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD220D292C62CF6000693876 /* Build configuration list for PBXProject "DessertOasis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD220D532C62CF6200693876 /* Debug */,
+				DD220D542C62CF6200693876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD220D552C62CF6200693876 /* Build configuration list for PBXNativeTarget "DessertOasis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD220D562C62CF6200693876 /* Debug */,
+				DD220D572C62CF6200693876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD220D582C62CF6200693876 /* Build configuration list for PBXNativeTarget "DessertOasisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD220D592C62CF6200693876 /* Debug */,
+				DD220D5A2C62CF6200693876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD220D5B2C62CF6200693876 /* Build configuration list for PBXNativeTarget "DessertOasisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD220D5C2C62CF6200693876 /* Debug */,
+				DD220D5D2C62CF6200693876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD220D262C62CF6000693876 /* Project object */;
+}
