@@ -9,58 +9,56 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @State private var desserts: [Dessert] = []
+    @State private var errorMsg: String?
+    @State private var isLoading: Bool = true
 
     var body: some View {
         NavigationSplitView {
+            if isLoading {
+                Text("")
+            }
             List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                if let errorMsg = errorMsg {
+                    Text("Error: \(errorMsg)")
+                } else {
+                    ForEach(desserts, id: \.mealId) { dessert in
+                        NavigationLink {
+                            Text(dessert.mealName)
+                        } label: {
+                            Text(dessert.mealName)
+                        }
                     }
                 }
-                .onDelete(perform: deleteItems)
             }
 #if os(macOS)
             .navigationSplitViewColumnWidth(min: 180, ideal: 200)
 #endif
             .toolbar {
 #if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
+            // empty for now
 #endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
             }
         } detail: {
             Text("Select an item")
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+        .task {
+            await fetchDesserts()
         }
     }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+    
+    private func fetchDesserts() async {
+        do {
+            desserts = try await getDesserts()
+            isLoading = false
+        } catch {
+            errorMsg = "Failed to fetch desserts."
         }
     }
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }
+
+
