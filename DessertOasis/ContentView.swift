@@ -15,8 +15,10 @@ struct ContentView: View {
 
     var body: some View {
         NavigationSplitView {
-            if isLoading {
-                Text("")
+            if isLoading { // in case splash screen ends early but desserts not fetched yet
+                ProgressView("Loading...")
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             List {
                 if let errorMsg = errorMsg {

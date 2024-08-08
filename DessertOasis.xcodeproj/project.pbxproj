@@ -16,6 +16,7 @@
 		DD220D502C62CF6200693876 /* DessertOasisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D4F2C62CF6200693876 /* DessertOasisUITests.swift */; };
 		DD220D522C62CF6200693876 /* DessertOasisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D512C62CF6200693876 /* DessertOasisUITestsLaunchTests.swift */; };
 		DD220D602C63D10D00693876 /* dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D5F2C63D10D00693876 /* dessert.swift */; };
+		DD220D622C64473700693876 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D612C64473700693876 /* LoadingScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DD220D4F2C62CF6200693876 /* DessertOasisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertOasisUITests.swift; sourceTree = "<group>"; };
 		DD220D512C62CF6200693876 /* DessertOasisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertOasisUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DD220D5F2C63D10D00693876 /* dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dessert.swift; sourceTree = "<group>"; };
+		DD220D612C64473700693876 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		DD220D302C62CF6000693876 /* DessertOasis */ = {
 			isa = PBXGroup;
 			children = (
+				DD220D612C64473700693876 /* LoadingScreen.swift */,
 				DD220D5E2C63D0E600693876 /* api */,
 				DD220D312C62CF6000693876 /* DessertOasisApp.swift */,
 				DD220D332C62CF6000693876 /* ContentView.swift */,
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD220D622C64473700693876 /* LoadingScreen.swift in Sources */,
 				DD220D342C62CF6000693876 /* ContentView.swift in Sources */,
 				DD220D362C62CF6000693876 /* Dessert.swift in Sources */,
 				DD220D602C63D10D00693876 /* dessert.swift in Sources */,

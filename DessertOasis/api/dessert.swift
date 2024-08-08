@@ -7,7 +7,7 @@
 
 import Foundation
 
-let apiKey = "1";
+let apiKey = "1"
 
 struct DessertResponse: Decodable {
     let results: [Dessert]
