@@ -7,6 +7,7 @@ struct ContentView: View {
     @State private var errorMsg: String?
     @State private var splashScreenAnimationDone: Bool = false
     @State private var contentOpacity: Double = 0.0
+    @State private var dessertImages: [String: UIImage] = [:]
 
     var body: some View {
         ZStack {
@@ -16,10 +17,13 @@ struct ContentView: View {
                         Text("Error: \(errorMsg)")
                     } else {
                         ForEach(desserts, id: \.mealId) { dessert in
-                            NavigationLink {
-                                Text(dessert.mealName)
-                            } label: {
-                                Text(dessert.mealName)
+                            NavigationLink(destination: DessertDetailView(dessert: dessert)) {
+                                HStack{
+                                    if let image = dessertImages[dessert.thumbnail] {
+                                        DessertThumbnailView(image: image)
+                                    }
+                                    Text(dessert.mealName)
+                                }
                             }
                         }
                     }
@@ -31,6 +35,7 @@ struct ContentView: View {
             .task {
                 await fetchDesserts()
                 await delaySplashScreen()
+                await preInitDessertImages()
             }
             .opacity(contentOpacity)
             
@@ -38,6 +43,20 @@ struct ContentView: View {
                 LoadingScreen()
             }
             
+        }
+    }
+    
+    func preInitDessertImages() async {
+        for dessert in desserts {
+            guard let url = URL(string: dessert.thumbnail) else { continue }
+            do {
+                let (data, _) = try await URLSession.shared.data(from: url)
+                if let image = UIImage(data: data) {
+                    dessertImages[dessert.thumbnail] = image
+                }
+            } catch {
+                errorMsg = "Failed to load image from: \(dessert.thumbnail)"
+            }
         }
     }
 
@@ -55,6 +74,19 @@ struct ContentView: View {
         try? await Task.sleep(nanoseconds: 3_000_000_000) // 3 seconds delay
         splashScreenAnimationDone = true
         contentOpacity = 1.0
+    }
+    
+}
+
+struct DessertThumbnailView: View {
+    let image: UIImage
+    
+    var body: some View {
+        Image(uiImage: image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 100)
+                .cornerRadius(10)
     }
 }
 
