@@ -20,16 +20,10 @@ struct DessertOasisApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-    
-    @State var isSplashActive: Bool = true
 
     var body: some Scene {
         WindowGroup {
-            if isSplashActive {
-                LoadingScreen(isActive: $isSplashActive)
-            }
-            
-            ContentView()
+            LoadingScreen()
         }
         .modelContainer(sharedModelContainer)
     }
