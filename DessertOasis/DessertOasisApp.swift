@@ -23,7 +23,7 @@ struct DessertOasisApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoadingScreen()
         }
         .modelContainer(sharedModelContainer)
     }
