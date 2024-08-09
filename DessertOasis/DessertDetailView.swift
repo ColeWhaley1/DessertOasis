@@ -13,15 +13,32 @@ let exampleDessert = Dessert(
     mealId: "53049"
 )
 
-// This would be stored more securely if key was not trivial
-private let apiKey: String = "1";
-
 struct DessertDetailView: View {
     @State var dessert: Dessert
+    @State var dessertDetails: DessertDetails?
+    @State var errorMsg: String = ""
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack{
+                Text("meal: \(dessertDetails?.mealName ?? "")")
+            }
+        }
+        .task{
+            await fetchDessertDetails()
+        }
+        
     }
+    
+    func fetchDessertDetails() async {
+        do{
+            var details = try await getDessertDetails(mealId: dessert.mealId)
+            dessertDetails = details
+        } catch {
+            errorMsg = "Failed to fetch details for: \(dessert.mealName)"
+        }
+    }
+    
 }
 
 #Preview{
