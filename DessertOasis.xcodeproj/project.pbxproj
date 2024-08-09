@@ -18,6 +18,7 @@
 		DD220D602C63D10D00693876 /* dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D5F2C63D10D00693876 /* dessert.swift */; };
 		DD220D622C64473700693876 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D612C64473700693876 /* LoadingScreen.swift */; };
 		DD220D642C656CF900693876 /* DessertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D632C656CF900693876 /* DessertDetailView.swift */; };
+		DD220D662C66882D00693876 /* dessertDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD220D652C66882D00693876 /* dessertDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DD220D5F2C63D10D00693876 /* dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dessert.swift; sourceTree = "<group>"; };
 		DD220D612C64473700693876 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 		DD220D632C656CF900693876 /* DessertDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailView.swift; sourceTree = "<group>"; };
+		DD220D652C66882D00693876 /* dessertDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dessertDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,6 @@
 		DD220D252C62CF6000693876 = {
 			isa = PBXGroup;
 			children = (
-				DD220D632C656CF900693876 /* DessertDetailView.swift */,
 				DD220D302C62CF6000693876 /* DessertOasis */,
 				DD220D442C62CF6200693876 /* DessertOasisTests */,
 				DD220D4E2C62CF6200693876 /* DessertOasisUITests */,
@@ -104,6 +105,7 @@
 		DD220D302C62CF6000693876 /* DessertOasis */ = {
 			isa = PBXGroup;
 			children = (
+				DD220D632C656CF900693876 /* DessertDetailView.swift */,
 				DD220D612C64473700693876 /* LoadingScreen.swift */,
 				DD220D5E2C63D0E600693876 /* api */,
 				DD220D312C62CF6000693876 /* DessertOasisApp.swift */,
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				DD220D5F2C63D10D00693876 /* dessert.swift */,
+				DD220D652C66882D00693876 /* dessertDetails.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				DD220D642C656CF900693876 /* DessertDetailView.swift in Sources */,
 				DD220D362C62CF6000693876 /* Dessert.swift in Sources */,
 				DD220D602C63D10D00693876 /* dessert.swift in Sources */,
+				DD220D662C66882D00693876 /* dessertDetails.swift in Sources */,
 				DD220D322C62CF6000693876 /* DessertOasisApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
