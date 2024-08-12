@@ -46,10 +46,10 @@ struct DessertDetailView: View {
             if(dessertDetails?.ingredients.isEmpty ?? true){
                 ProgressView()
             } else {
-                // list ingredients and measures
                 List{
+                    // ingredients and measures
                     Text("Ingredients")
-                        .font(Font.subheadline.bold())
+                        .font(Font.headline.bold())
                         .frame(maxWidth: .infinity, alignment: .center)
                     ForEach(0..<(dessertDetails?.ingredients.count ?? 0), id: \.self) { i in
                         if let ingredient = dessertDetails?.ingredients[i], let measure = dessertDetails?.measures[i] {
@@ -68,19 +68,20 @@ struct DessertDetailView: View {
                         }
                     }
                     .listRowSeparator(.hidden)
-                }
-                .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-            }
-            
-            let instructionsLoading = dessertDetails?.instructions?.isEmpty ?? true
-            
-            if !instructionsLoading {
-                // instructions
-                List{
-                    Text("Instructions")
-                        .font(Font.subheadline.bold())
-                        .frame(maxWidth: .infinity, alignment: .center)
-                    Text(dessertDetails?.instructions ?? "Instructions Unavailable")
+                    
+                    Divider()
+                    
+                    let instructionsLoading = dessertDetails?.instructions?.isEmpty ?? true
+                    
+                    if !instructionsLoading {
+                        // instructions
+                        Text("Instructions")
+                            .font(Font.headline.bold())
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            .listRowSeparator(.hidden)
+                        Text(dessertDetails?.instructions ?? "Instructions Unavailable")
+                            .font(.system(size: 20))
+                    }
                 }
                 .navigationSplitViewColumnWidth(min: 180, ideal: 200)
             }
