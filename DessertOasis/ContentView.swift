@@ -11,26 +11,55 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
+
             NavigationSplitView {
                 List {
                     if let errorMsg = errorMsg {
                         Text("Error: \(errorMsg)")
+                            .foregroundColor(.red)
+                            .font(.headline)
+                            .padding()
+                            .background(Color.white.opacity(0.8))
+                            .cornerRadius(10)
                     } else {
                         ForEach(desserts, id: \.mealId) { dessert in
-                            NavigationLink(destination: DessertDetailView(dessert: dessert)) {
-                                HStack{
+                            NavigationLink(destination: DessertDetailView(
+                                dessert: dessert,
+                                image: (dessertImages[dessert.thumbnail] ?? UIImage(named: "image-not-found"))!
+                            )
+                            ) {
+                                HStack {
                                     if let image = dessertImages[dessert.thumbnail] {
                                         DessertThumbnailView(image: image)
                                     }
-                                    Text(dessert.mealName)
+                                    VStack(alignment: .leading) {
+                                        Text(dessert.mealName)
+                                            .font(Font.headline.bold())
+                                            .foregroundColor(.white)
+                                        Text("Tap to see more")
+                                            .font(.subheadline)
+                                            .foregroundColor(.white.opacity(0.7))
+                                    }
+                                    .frame(maxWidth: .infinity, alignment: .leading)
                                 }
+                                .padding()
+                                .background(LinearGradient(gradient: Gradient(colors: [Color.gray.opacity(0.2), Color.gray.opacity(0.4)]),
+                                                           startPoint: .topLeading,
+                                                           endPoint: .bottomLeading))
+                                .cornerRadius(10)
+                                .shadow(radius: 5)
+                                .animation(.spring(), value: dessertImages)
                             }
+                            .listRowBackground(Color.clear)
+                            .listRowSeparator(.hidden)
                         }
                     }
                 }
                 .navigationSplitViewColumnWidth(min: 180, ideal: 200)
+                .background(Color.clear)
             } detail: {
                 Text("Select an item")
+                    .foregroundColor(.white)
             }
             .task {
                 await fetchDesserts()
@@ -42,7 +71,6 @@ struct ContentView: View {
             if isLoading || !splashScreenAnimationDone {
                 LoadingScreen()
             }
-            
         }
     }
     
@@ -75,7 +103,6 @@ struct ContentView: View {
         splashScreenAnimationDone = true
         contentOpacity = 1.0
     }
-    
 }
 
 struct DessertThumbnailView: View {
@@ -83,10 +110,11 @@ struct DessertThumbnailView: View {
     
     var body: some View {
         Image(uiImage: image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 100, height: 100)
-                .cornerRadius(10)
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 100, height: 100)
+            .clipShape(Circle())
+            .shadow(radius: 5)
     }
 }
 

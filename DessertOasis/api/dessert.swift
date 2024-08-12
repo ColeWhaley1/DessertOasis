@@ -7,7 +7,8 @@
 
 import Foundation
 
-let apiKey = "1"
+// This would be stored more securely if key was not trivial
+private let apiKey: String = "1";
 
 struct DessertResponse: Decodable {
     let results: [Dessert]
