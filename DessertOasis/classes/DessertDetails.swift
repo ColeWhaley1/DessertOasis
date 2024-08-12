@@ -1,10 +1,3 @@
-//
-//  DessertDetails.swift
-//  DessertOasis
-//
-//  Created by Cole Whaley on 8/9/24.
-//
-
 import Foundation
 
 class DessertDetails: Decodable {
@@ -17,8 +10,8 @@ class DessertDetails: Decodable {
     let mealThumb: String
     let tags: String?
     let youtube: String?
-    let ingredients: [String?] // json has it as 20 variables and not an arr, so i have to dynamically put all ingredients in arr. very frustrating
-    let measures: [String?] // same as above
+    let ingredients: [String?]
+    let measures: [String?]
     let source: String?
     let imageSource: String?
     let creativeCommonsConfirmed: String?
@@ -38,14 +31,19 @@ class DessertDetails: Decodable {
         case imageSource = "strImageSource"
         case creativeCommonsConfirmed = "strCreativeCommonsConfirmed"
         case dateModified = "dateModified"
-        case ingredients = "ingredients"
-        case measures = "measures"
+        case strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5
+        case strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10
+        case strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15
+        case strIngredient16, strIngredient17, strIngredient18, strIngredient19, strIngredient20
+        case strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5
+        case strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10
+        case strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15
+        case strMeasure16, strMeasure17, strMeasure18, strMeasure19, strMeasure20
     }
     
-    // have to custom init because the json format is different from the format we want.
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        
+
         mealId = try container.decode(String.self, forKey: .mealId)
         mealName = try container.decode(String.self, forKey: .mealName)
         drinkAlternate = try container.decodeIfPresent(String.self, forKey: .drinkAlternate)
@@ -62,30 +60,29 @@ class DessertDetails: Decodable {
         
         var ingredientsDecoded: [String?] = []
         var measuresDecoded: [String?] = []
-        
-        // convert the json vars into 2 arrs of ingredients and measures. More concise and clean
-        for i in 1...20{
-            let strIngredient = "strIngredient\(i)"
-            let strMeasure = "strMeasure\(i)"
-            
-            if let ingredientKey = CodingKeys(stringValue: strIngredient),
-               let ingredient = try? container.decodeIfPresent(String.self, forKey: ingredientKey) {
-                ingredientsDecoded.append(ingredient)
-            } else {
-                continue
-            }
-                        
-            if let measureKey = CodingKeys(stringValue: strMeasure),
-               let measure = try? container.decodeIfPresent(String.self, forKey: measureKey) {
-                measuresDecoded.append(measure)
-            } else {
-                continue
-            }
 
+        for i in 1...20 {
+            // decode measures and append to its own array
+            if let measureKey = CodingKeys(stringValue: "strMeasure\(i)") {
+                let measure = try container.decodeIfPresent(String.self, forKey: measureKey)
+                if measure == "" || measure == nil {
+                    continue
+                }
+                measuresDecoded.append(measure)
+            }
+            
+            // decode ingredients and append to its own array
+            if let ingredientKey = CodingKeys(stringValue: "strIngredient\(i)") {
+                let ingredient = try container.decodeIfPresent(String.self, forKey: ingredientKey)
+                if ingredient == "" || ingredient == nil {
+                    continue
+                }
+                ingredientsDecoded.append(ingredient)
+            }
         }
-        
-        // init last 2 fields as arrays
-        ingredients = ingredientsDecoded
+
         measures = measuresDecoded
+        ingredients = ingredientsDecoded
     }
+
 }

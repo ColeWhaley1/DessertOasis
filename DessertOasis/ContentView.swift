@@ -23,7 +23,11 @@ struct ContentView: View {
                             .cornerRadius(10)
                     } else {
                         ForEach(desserts, id: \.mealId) { dessert in
-                            NavigationLink(destination: DessertDetailView(dessert: dessert)) {
+                            NavigationLink(destination: DessertDetailView(
+                                dessert: dessert,
+                                image: (dessertImages[dessert.thumbnail] ?? UIImage(named: "image-not-found"))!
+                            )
+                            ) {
                                 HStack {
                                     if let image = dessertImages[dessert.thumbnail] {
                                         DessertThumbnailView(image: image)
@@ -39,7 +43,7 @@ struct ContentView: View {
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                 }
                                 .padding()
-                                .background(LinearGradient(gradient: Gradient(colors: [Color.gray.opacity(0.1), Color.gray.opacity(0.3)]),
+                                .background(LinearGradient(gradient: Gradient(colors: [Color.gray.opacity(0.2), Color.gray.opacity(0.4)]),
                                                            startPoint: .topLeading,
                                                            endPoint: .bottomLeading))
                                 .cornerRadius(10)
